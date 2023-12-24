@@ -1,0 +1,13 @@
+.instructionContainer{
+    padding: 15px;
+    border-bottom: 2px solid black;
+}
+.instructionContainer h1{
+border-bottom: 2px solid black;
+}
+.instructionContainer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    line-height: 0px;
+}

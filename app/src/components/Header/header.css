@@ -1,0 +1,20 @@
+.headerContainer{
+display: flex;
+justify-content: center;
+padding: 25px;
+}
+.headerContainer > input,
+.headerContainer > button{
+    padding: 5px;
+    font-size: 20px;
+}
+.headerContainer > button{
+    background-color: blue;
+    color: white;
+    transition: .4s;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+.headerContainer > button:hover{
+    background-color: red;
+}

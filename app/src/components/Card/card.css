@@ -1,0 +1,44 @@
+.cardContainer>.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.images {
+    width: 350px;
+    height: 500px;
+    background-color: black;
+    animation: imageAnimation 10s infinite forwards;
+    border-radius: 50px;
+}
+
+/* 350-622 */
+@keyframes imageAnimation {
+    0% {
+        background-image: url(../Resources/image-1.jpg);
+    }
+
+    30% {
+        background-image: url(../Resources/image-2.jpg);
+    }
+
+    60% {
+        background-image: url(../Resources/image-3.jpg);
+    }
+
+    90% {
+        background-image: url(../Resources/image-4.jpg);
+    }
+
+    100% {
+        background-image: url(../Resources/image-1.jpg);
+    }
+
+}
