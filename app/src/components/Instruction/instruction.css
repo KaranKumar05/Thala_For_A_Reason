@@ -1,13 +1,33 @@
-.instructionContainer{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.instructionContainer {
     padding: 15px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid purple;
+    background: rgba(128, 0, 128, 0.729);
 }
-.instructionContainer h1{
-border-bottom: 2px solid black;
+
+.instructionContainer h1 {
+    border-bottom: 2px solid white;
+    background: linear-gradient(to right, rgb(0, 204, 255), rgb(0, 255, 30));
+    color: transparent;
+    -webkit-background-clip: text;
+    width: 180px;
 }
-.instructionContainer ul{
+
+.instructionContainer ul {
     display: flex;
     flex-direction: column;
     gap: 0px;
-    line-height: 0px;
+    padding: 5px 25px;
+}
+.instructionContainer ul li{
+    list-style-type: square;
+    color: white;
+}
+.instructionContainer ul li p{
+    color: white;
 }

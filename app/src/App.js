@@ -21,7 +21,7 @@ function App() {
   const [numCard, setNumCard] = useState(0);
   const [sum, setSum] = useState(0);
 
-  // Ref 
+  // Ref's
   const audioRefNumber = useRef();
   const audioRefText = useRef();
 
@@ -41,7 +41,7 @@ function App() {
     // if length of input is 7
     if (inputValue.length === 7) {
       audioRefText.current.play();
-      setCard(inputValue.split('').join('+') + ' = ' + inputValue.length + ' is Thala For A Reason');
+      setCard(inputValue.split('').join('+') + ' = ' + inputValue.length );
     } else {
       setCard("")
       audioRefText.current.pause();
@@ -56,7 +56,7 @@ function App() {
         const result = arr.reduce((acc, current) => acc + current, 0);
         const expression = arr.join(' + ');
         const inputAddedValue = `${expression} = ${result}`;
-        setNumCard(`${inputAddedValue} Thala For A Reason`)
+        setNumCard(`${inputAddedValue}`)
       }
       sumAndDisplay(numbers);
     } else {

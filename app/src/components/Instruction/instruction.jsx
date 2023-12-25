@@ -6,10 +6,10 @@ const Instruction = () => {
       <h1>Instruction</h1>
       <ul>
         <li>
-          <p>Input Any Seven Letter and See the Magic.</p>
+          <p>Enter Any Seven Letter and See the Magic.</p>
         </li>
         <li>
-          <p>Enter Number if there sum is 7, the Magic is happens.</p>
+          <p>Enter Number If the sum of the entered numbers is 7, magic happens.</p>
         </li>
       </ul>
     </div>

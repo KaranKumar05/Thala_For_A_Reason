@@ -1,9 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 .cardContainer>.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 0px;
+    text-align: center;
 }
+
+.cardContainer>.container .textCardContainer,
+.cardContainer>.container .numberCardContainer {
+    margin-top: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardContainer>.container .textCardContainer h3,
+.cardContainer>.container .numberCardContainer h3 {
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+    width: 100%;
+    font-size: clamp(20px, 7vw, 30px);
+    background: linear-gradient(to right, rgba(30, 0, 255, 0.864), rgb(204, 255, 0));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Silkscreen', sans-serif;
+
+}
+.cardContainer>.container .textCardContainer h4,
+.cardContainer>.container .numberCardContainer h4 {
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+
+}
+.cardContainer .container .shareButton{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cardContainer>.container button {
+    background-color: transparent;
+    color: blue;
+    border: none;
+    border-bottom: 1px solid blue;
+    font-weight: bold;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+
 
 .imageContainer {
     display: flex;

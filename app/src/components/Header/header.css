@@ -1,20 +1,31 @@
-.headerContainer{
-display: flex;
-justify-content: center;
-padding: 25px;
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
 }
-.headerContainer > input,
-.headerContainer > button{
-    padding: 5px;
-    font-size: 20px;
+
+.headerContainer>input,
+.headerContainer>button {
+    padding: 8px;
+    font-size: 17px;
 }
-.headerContainer > button{
+
+.headerContainer>button {
     background-color: blue;
     color: white;
     transition: .4s;
     border: none;
     border-radius: 0 5px 5px 0;
 }
-.headerContainer > button:hover{
+
+.headerContainer>button:hover {
     background-color: red;
+}
+
+@media (max-width: 500px) {
+
+    .headerContainer>input,
+    .headerContainer>button {
+        font-size: 17   px;
+    }
 }
